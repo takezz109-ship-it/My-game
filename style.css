@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    background:  black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+}
+
+#road {
+    width: 90%;
+    max-width: 300px;
+    height: 65vh;
+    min-height: 350px;
+    max-height: 550px;
+    background: gray;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#player, #enemy{
+    width: 13%;
+    height: 14%;
+    position: absolute;
+    border-radius: 8px;
+}
+
+#player {
+    background: blue;
+    bottom:10px;
+    left: 43.5%
+}
+
+#enemy{
+    background:red;
+    top: 0;
+    left: 43.5%;
+}
+
+button{
+    margin: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width:480){
+    #road {
+        width:95%;
+        height: 55vh;
+        min-height: 350px;
+    }
+    button{
+        width: 60%;
+        padding: 14px;
+    }
+}
+ @media (min-width: 768px){
+    #road{
+        width: 300px;
+        height: 500px;
+    }
+ }
